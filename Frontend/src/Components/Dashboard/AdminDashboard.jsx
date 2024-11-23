@@ -9,7 +9,7 @@ const AdminDashboard = () => {
   useEffect(()=>{
     const getData=async()=>{
       try {
-        const response=await axios.get('http://localhost:4001/emp/getdata')
+        const response=await axios.get('https://employee-mangement-system-backend.onrender.com/emp/getdata')
        console.log(response.data.data);
         setUser(response.data.data)
        

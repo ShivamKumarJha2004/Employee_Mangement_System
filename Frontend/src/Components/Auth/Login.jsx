@@ -15,8 +15,8 @@ const Login = ({ setUserRole }) => {
 
     try {
       const url = isAdminLogin
-        ? 'http://localhost:4001/emp/adminlogin'
-        : 'http://localhost:4001/emp/login';
+        ? 'https://employee-mangement-system-backend.onrender.com/emp/adminlogin'
+        : 'https://employee-mangement-system-backend.onrender.com/emp/login';
 
       const response = await axios.post(url, { email, password });
 
