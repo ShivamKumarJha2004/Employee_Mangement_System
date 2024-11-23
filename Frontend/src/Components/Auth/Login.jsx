@@ -38,9 +38,7 @@ const Login = ({ setUserRole }) => {
         alert(error.response.data.message || 'Login failed');
         setEmail('');
         setPassword('');
-      } else {
-        setErrorMessage('Network error. Please try again later.');
-      }
+      } 
     }
   };
 
